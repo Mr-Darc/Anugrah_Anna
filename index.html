@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="description" content="Anugrah Anna — Data Engineer and Robotics & Automation Engineer portfolio." />
+
+  <meta property="og:title" content="Anugrah Anna | Portfolio" />
+  <meta property="og:description" content="Data Engineer | Robotics & Automation Engineer" />
+  <meta property="og:type" content="website" />
+
+  <meta name="robots" content="index, follow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anugrah | Portfolio</title>
 
-  <!-- Google Font: Inter -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- HERO -->
+  <header class="hero">
 
-    <!-- Theme Switch -->
+    <!-- Theme Toggle -->
     <label class="theme-switch">
       <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
       <span class="slider"></span>
@@ -30,75 +37,140 @@
     </div>
 
     <div class="hero-image">
-      <img src="profile.png" alt="Anugrah profile photo">
+      <!-- Use relative path for deployment -->
+      <img
+        src="profile.png"
+        alt="Portrait of Anugrah Anna"
+        loading="lazy"
+      />
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
+    <div class="scroll-indicator" aria-hidden="true">
       <span>Scroll</span>
       <div class="line"></div>
     </div>
 
-  </section>
+  </header>
 
   <!-- MAIN CONTENT -->
   <main>
 
-    <section class="reveal">
-      <h2>About</h2>
-      <p>
-        I’m Anugrah Anna, a Data Engineer | Robotics & Automation Engineer who enjoys learning by building. I’m passionate about technology, problem-solving, and writing clean, maintainable solutions. Currently growing my skills through hands-on projects and collaboration, with a focus on continuous improvement and impact.
-      </p>
+    <section class="reveal" align="justify">
+      <div class="parallax" data-speed="0.1">
+        <h3><u>About</u></h3>
+        <p>
+          Hi, I’m <strong>Anugrah Anna</strong> a Data Engineer | Robotics & Automation Engineer who believes the best way to learn is by building. I’m driven by curiosity and a passion for solving real-world problems through technology. Whether it’s working with data pipelines or developing automation systems, I enjoy turning ideas into practical, efficient solutions. I focus on writing clean, maintainable code and designing systems that are both scalable and reliable. <br><br>My journey is shaped by hands-on projects and continuous learning. I’m constantly exploring new tools, improving my skills, and collaborating with others to create meaningful impact. For me, growth comes from building, experimenting, and refining one project at a time.
+        </p>
+      </div>
+    </section>
+
+    <section class="reveal" align="justify">
+      <div class="parallax" data-speed="0.1">
+        <h3><u>Currently</u></h3> 
+    	  Building data-driven systems and automation solutions that combine data engineering and intelligent workflows. Advancing expertise in system design, data pipelines, and robotics frameworks, while experimenting with real-world applications of AI and automation. Delivering impactful solutions through hands-on, collaborative projects.
+      </div>
     </section>
 
     <section class="reveal">
-      <h2>Currently</h2>
-      <p>Improving Python fundamentals and learning backend development.</p>
-    </section>
-
-    <section class="reveal">
-      <h2>Skills</h2>
-      <p>·Python · HTML · CSS · Git · GitHub · SQL</p>
-    </section>
-
-    <section class="reveal">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <div>
-          <strong>Student Management System</strong>
-          <p>Java‑based CRUD application for managing student data.</p>
-          <a href="https://github.com/yourusername/project1" target="_blank">GitHub →</a>
+      <div class="parallax" data-speed="0.1">
+        <h3><u>Skills</u></h3>
+	<ul>
+	<h2><li>Languages</li></h2>
+        <div class="skills-list">
+          <span>Python</span>
+          <span>HTML</span>
+	  <span>SQL</span>         
+        </div>
+	<ul>
+      </div>
+      <div class="parallax" data-speed="0.1">
+	<ul>
+	<h2><li>Robotics & Automation</li></h2>
+        <div class="skills-list">
+          <span>ROS</span>
+          <span>Embedded System</span>
+          <span>Sensors & Actuators</span>
+          <span>Control System</span>
+          <span>DCS</span>
+          <span>PLC</span>
+        </div>
+	<ul>
+      </div>
+      <div class="parallax" data-speed="0.1">
+	<ul>
+	<h2><li>Tools & Platforms</li></h2>
+        <div class="skills-list">
+      	  <span>OSI PI</span>
+          <span>800xA</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Linux</span>
+          <span>Docker</span>          
+        </div>
+	<ul>
+      </div>
+      <div class="parallax" data-speed="0.1">
+	<ul>
+	<h2><li>Cloud & Database</li></h2>
+        <div class="skills-list">
+      	  <span>MySQL</span>        
         </div>
       </div>
-
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2">
-        <div>
-          <strong>Portfolio Website</strong>
-          <p>Minimal interactive portfolio hosted on GitHub Pages.</p>
-          <a href="https://github.com/yourusername/yourusername.github.io" target="_blank">GitHub →</a>
-        </div>
-      </div>
-
+	</ul>
     </section>
 
     <section class="reveal">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:anugrahanna1@email.com">Email</a> ·
-        <a href="https://www.linkedin.com/in/anugrah-anna" target="_blank">LinkedIn</a> ·
-        <a href="https://github.com/mr-dark-angel" target="_blank">GitHub</a>
-      </p>
+      <div class="parallax" data-speed="0.1">
+        <h3><u>Projects</u></h3>
+
+        <article class="project">
+          <img src="assets/project1.jpg" alt="Student Management System preview" loading="lazy">
+          <div>
+	  <div class="project-content">
+            <h3>Student Management System</h3>
+            <p>Java-based CRUD application for managing student data.</p>
+            <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener">
+              GitHub →
+            </a>
+          </div>
+        </article>  
+
+	<article class="project">
+	  <div class="project-image">
+	    <img src="assets/images/project1.jpg" alt="Student Management System preview" loading="lazy">
+	  </div>
+	  <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>Minimal interactive portfolio hosted on GitHub Pages.</p>
+            <a href="https://github.com/yourusername/yourusername.github.io" target="_blank" rel="noopener">
+              GitHub →
+            </a>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <footer class="reveal">
-      © 2026 Anugrah
-    </footer>
+    <section class="reveal">
+      <div class="parallax" data-speed="0.1">
+        <h3><u>Contact</u></h3>
+        <p>
+          <a href="mailto:anugrahanna1@email.com">Email</a> ·
+          <a href="https://www.linkedin.com/in/anugrah-anna" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/mr-dark-angel" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
 
   </main>
 
-  <script src="script.js"></script>
+  <footer class="reveal">
+    <div class="parallax" data-speed="0.1">
+      © 2026 Anugrah
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
