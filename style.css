@@ -265,6 +265,7 @@ h2 {
   background: var(--card);
   border-radius: 12px;
   align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 /* IMAGE WRAPPER */
@@ -308,7 +309,6 @@ h2 {
 
 .project:hover {
   transform: translateY(-4px);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
