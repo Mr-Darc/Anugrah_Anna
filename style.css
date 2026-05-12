@@ -264,7 +264,7 @@ h2 {
   padding: 16px;
   background: var(--card);
   border-radius: 12px;
-  align-items: center;
+  margin-bottom: 20px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
