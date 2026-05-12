@@ -308,6 +308,7 @@ h2 {
 
 .project:hover {
   transform: translateY(-4px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
