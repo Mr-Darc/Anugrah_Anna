@@ -41,6 +41,7 @@ body {
   color: var(--text);
   line-height: 1.65;
   transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
 }
 
 img {
@@ -307,15 +308,22 @@ a:hover::after {
 main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  flex-grow: 0;
+  gap: 0;
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 80px 40px;
+  padding: 0 40px;
 }
 
 section {
-  margin-bottom: 48px;
+  min-height: auto;
+  padding: 40px 0;
+}
+
+section:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -327,11 +335,49 @@ h2 {
 
 }
 
+
+/* ===============================
+   FOOTER (FADE + DIVIDER)
+================================ */
+
 .footer {
+  position: relative;
+
+  /* ✅ VERY IMPORTANT */
+  margin-top: 0;
+  padding-top: 15px;
+
   text-align: center;
-  padding: 30px 0;
   color: var(--muted);
   font-size: 14px;
+
+  /* ✅ Fade effect */
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(4px);
+  transition: all 0.8s ease;
+}
+
+.footer.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* ✅ Divider line */
+.footer::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  margin: 0 auto 12px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
 }
 
 /* ===============================
@@ -414,6 +460,21 @@ h2 {
 /* ===============================
    GLASS ICON BUTTONS
 ================================ */
+.contact {
+  min-height: auto;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.contact > *:last-child {
+  margin-bottom: 0;
+}
+
+.card {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .social-buttons {
   display: flex;
   gap: 20px;
