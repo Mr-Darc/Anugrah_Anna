@@ -134,7 +134,7 @@ nav a:hover {
   width: 100%;
   object-fit: cover;
   object-position: center 20%;
-  filter: grayscale(60%);
+  filter: grayscale(80%);
 }
 
 /* ===============================
